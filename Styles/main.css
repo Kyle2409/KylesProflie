@@ -8,6 +8,7 @@ html, body {
   padding: 0px;
 }
 body {
+  
   font-family: "Helvetica Neue",sans-serif;
   font-weight: lighter;
 }
@@ -31,7 +32,7 @@ header {
   color: black;
   font-weight: bold;
   font-size: 20px;
- padding-left: 12px;
+ padding-left: 15px;
   text-decoration: none;
 }
 
@@ -81,19 +82,19 @@ nav ul li a {
   text-decoration: none;
   line-height: 60px;
   width: 100%;
-  background: #000;
+ 
   text-align: right;
   box-sizing: border-box;
   padding: 15px 24px;
   cursor: pointer;
-  color: #fff;
+ 
   display: none;
 }
 a {
   height: 40px;
   margin: 0px;
   padding: 0px;
-  color: #fff;
+  /* color: #fff; */
   text-transform: uppercase;
   text-decoration: none !important;
   letter-spacing: .25em;
@@ -119,7 +120,7 @@ a {
   width: 0;
   text-decoration: none;
 }
-/* a:hover::after {
+a:hover::after {
   width: 100%;
   right: 0;
   text-decoration: none;
@@ -137,13 +138,13 @@ a::after {
   transition: width .5s ease 0s, right .5s ease 0s;
   width: 0;
   text-decoration: none;
-} */
+}
 .button {
   border-radius: 100px;
   height: 80px;
   width: 200px;
   border: none;
-  color: white;
+  
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -195,7 +196,7 @@ background-position: 100% 50%}
     padding-top: 70px !important;
     text-decoration: none;
     line-height: 60px;
-    width: 94.5%;
+    width: 97.4%;
     background: #000;
     text-align: right;
     box-sizing: border-box;
@@ -213,7 +214,7 @@ background-position: 100% 50%}
 
   nav.black ul {
     position: fixed;
-    width: 96.5%;
+    width: 97.4%;
         background: rgb(241, 241, 241);
   }
   .button {
@@ -278,7 +279,7 @@ background-position: 100% 50%}
   bottom: 20%;
   position: static ;
     color: rgb(0, 0, 0);
-    padding: 18px;
+    
     /* padding-top: -40px; */
     font-size: 25px;
     letter-spacing: 10px;
@@ -506,7 +507,7 @@ background-position: 100% 50%}
   width: 17px;
   margin-left: 0;
   border-bottom-width: 3px;
-  border-bottom-color: #cacaca;
+  border-bottom-color: white;
   border-bottom-style: solid;
 }
 .testimonial_section .about_content .layer_content .section_title .heading_line:after {
@@ -680,7 +681,7 @@ background-position: 100% 50%}
 }
 @media all and (max-width: 991px) {
   .testimonial_section {
-    height: 140vh;
+    height: 155vh;
     background-color:#efcb8d;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -796,6 +797,7 @@ background-position: 100% 50%}
       padding: 0;
       list-style: none;
       margin: 1em;
+      
     }
     
     .footer-dark.social-icons li {
@@ -982,7 +984,7 @@ background-position: 100% 50%}
       height: 45px;
       border-radius: 100%;
       display: block;
-      background: linear-gradient(45deg, #ff003c, #c648c8);
+      background: linear-gradient(45deg, #ff003c, #ff5e14);
       transition: all 265ms ease-out;
     }
     
@@ -996,7 +998,7 @@ background-position: 100% 50%}
       -ms-transform: scale(2.2);
       -webkit-transform: scale(2.2);
       color: #ff003c;
-      background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+      background: -webkit-linear-gradient(45deg, #ff5e14, #ff003c);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transition: all 265ms ease-in;
@@ -1042,7 +1044,7 @@ background-position: 100% 50%}
     
    .bn30:hover {
       background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
-      box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+      
     }
     
     .bn30:hover .text {
@@ -1055,13 +1057,14 @@ background-position: 100% 50%}
     background-repeat: no-repeat;
     box-sizing: border-box;
   }
-
-  
+  .project a{
+    display: inline-block !;
+  }
   .cardBox {
-    padding-top: 250px;
+    border-radius: 15px;
     float: left;
     font-size: 1.2em;
-    margin: 1% 0 0 1%;
+    margin: 7% 1% 7% 7%;
     perspective: 800px;
     transition: all 0.3s ease 0s;
     width: 23.7%;
@@ -1072,6 +1075,7 @@ background-position: 100% 50%}
   }
   
   .card {
+    border-radius: 15px;
     background: #222;
     cursor: default;
     height: 300px;
@@ -1088,9 +1092,10 @@ background-position: 100% 50%}
   
   .card .front,
   .card .back {
+    border-radius: 15px;
     backface-visibility: hidden;
     box-sizing: border-box;
-    color: white;
+    
     display: block;
     font-size: 1.2em;
     height: 100%;
@@ -1101,7 +1106,8 @@ background-position: 100% 50%}
   }
   
   .card .front strong {
-    background: #fff;
+    border-radius: 15px;
+    
     border-radius: 100%;
     color: #222;
     font-size: 1.5em;
@@ -1113,7 +1119,7 @@ background-position: 100% 50%}
     transform: rotateY( 180deg);
   }
   
-  .card .back a {
+  /* .card .back a {
     padding: 0.3em 0.5em;
     background: #333;
     color: #fff;
@@ -1121,28 +1127,28 @@ background-position: 100% 50%}
     border-radius: 1px;
     font-size: 0.9em;
     transition: all 0.2s ease 0s;
-  }
+  } */
   
-  .card .back a:hover {
+  /* .card .back a:hover {
     background: #fff;
     color: #333;
     text-shadow: 0 0 1px #333;
-  }
+  } */
   
   .cardBox:nth-child(1) .card .back {
-    background: cornflowerblue;
+    background: #14173a;
   }
   
   .cardBox:nth-child(2) .card .back {
-    background: orange;
+    background: #14173a;
   }
   
   .cardBox:nth-child(3) .card .back {
-    background: yellowgreen;
+    background: #14173a;
   }
   
   .cardBox:nth-child(4) .card .back {
-    background: tomato;
+    background: #14173a;
   }
   
   .cardBox:nth-child(2) .card {
@@ -1180,7 +1186,7 @@ background-position: 100% 50%}
   
   @media screen and (max-width: 767px) {
     #projects {
-      height: 220vh;
+      height: 270vh;
       background-color:#efcb8d;
       background-repeat: no-repeat;
       box-sizing: border-box;
@@ -1222,11 +1228,132 @@ background-position: 100% 50%}
       color: rgba(#858585);
       display: inline-block;
       text-transform: uppercase;
+  }
+      .cardBox {
+        padding-top: 250px;
+        float: left;
+        font-size: 1.2em;
+        margin: 1% 0 0 1%;
+        perspective: 800px;
+        transition: all 0.3s ease 0s;
+        width: 23.7%;
+      }
+      
+      .cardBox:hover .card {
+        transform: rotateY( 180deg);
+      }
+      
+      .card {
+        border-radius: 10px;
+        background: #222;
+        cursor: default;
+        height: 300px;
+        transform-style: preserve-3d;
+        transition: transform 0.4s ease 0s;
+        width: 100%;
+        -webkit-animation: giro 1s 1;
+        animation: giro 1s 1;
+      }
     
+      .card p {
+        margin-bottom: 1.8em;
+      }
+      
+      .card .front,
+      .card .back {
+        border-radius: 10px;
+        backface-visibility: hidden;
+        box-sizing: border-box;
+        color: white;
+        display: block;
+        font-size: 1.2em;
+        height: 100%;
+        padding: 0.8em;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+      }
+      
+      .card .front strong {
+        background: #fff;
+        border-radius: 100%;
+        color: #222;
+        font-size: 1.5em;
+        line-height: 30px;
+        padding: 0 7px 4px 6px;
+      }
+      
+      .card .back {
+        transform: rotateY( 180deg);
+      }
+      
+      .card .back a {
+        padding: 0.3em 0.5em;
+       
+        text-decoration: none;
+        border-radius: 1px;
+        font-size: 0.9em;
+        transition: all 0.2s ease 0s;
+      }
+      
+      .card .back a:hover {
+        background: #fff;
+        color: #333;
+        text-shadow: 0 0 1px #333;
+      }
+      
+      .cardBox:nth-child(1) .card .back {
+        background: #14173a;
+      }
+      
+      .cardBox:nth-child(2) .card .back {
+        background: #14173a;
+      }
+      
+      .cardBox:nth-child(3) .card .back {
+        background: #14173a;
+      }
+      
+      .cardBox:nth-child(4) .card .back {
+        background: #14173a;
+      }
+      
+      .cardBox:nth-child(2) .card {
+        -webkit-animation: giro 1.5s 1;
+        animation: giro 1.5s 1;
+      }
+      
+      .cardBox:nth-child(3) .card {
+        -webkit-animation: giro 2s 1;
+        animation: giro 2s 1;
+      }
+      
+      .cardBox:nth-child(4) .card {
+        -webkit-animation: giro 2.5s 1;
+        animation: giro 2.5s 1;
+      }
+      
+      @-webkit-keyframes giro {
+        from {
+          transform: rotateY( 180deg);
+        }
+        to {
+          transform: rotateY( 0deg);
+        }
+      }
+      
+      @keyframes giro {
+        from {
+          transform: rotateY( 180deg);
+        }
+        to {
+          transform: rotateY( 0deg);
+        }
+      }
       
     
   }
-  }
+  
   
   @media screen and (max-width: 480px) {
     .cardBox {
@@ -1266,4 +1393,20 @@ padding-left: 20px;
 color: #14173a;
 
 position: relative;
+}
+#projects a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  right: 0;
+  position: absolute;
+ 
+  width: 0;
+  text-decoration: none;
+}
+.hr.new5 {
+  border: 10px solid green !important;
+  border-radius: 5px !important;
 }
